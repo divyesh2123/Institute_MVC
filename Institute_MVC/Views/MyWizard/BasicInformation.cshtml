@@ -1,0 +1,17 @@
+﻿@model Institute_MVC.Controllers.BasicInformation
+@{
+    ViewBag.Title = "BasicInformation";
+}
+
+<h2>BasicInformation</h2>
+
+@using (Html.BeginForm("BasicInformation", "MyWizard",FormMethod.Post))
+{
+
+            @Html.LabelFor(y=>y.FirstName)
+            @Html.TextBoxFor(y=>y.FirstName)
+
+
+    <input type="submit" value="Next" />
+ 
+            }

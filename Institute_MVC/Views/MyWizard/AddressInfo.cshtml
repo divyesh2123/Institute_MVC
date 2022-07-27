@@ -1,0 +1,17 @@
+﻿@model Institute_MVC.Controllers.AddressInfo
+@{
+    ViewBag.Title = "AddressInfo";
+}
+
+<h2>AddressInfo</h2>
+
+@using (Html.BeginForm("AddressInfo", "MyWizard", FormMethod.Post))
+{
+
+    @Html.LabelFor(y => y.City)
+    @Html.TextBoxFor(y => y.City)
+
+
+    <input type="submit" value="Next" />
+
+}
